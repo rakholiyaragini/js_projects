@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+     <style>
+        .box-1{
+            width: 600px;
+            height: 300px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        }
+     </style>
+</head>
+<body>
+    <div class="pt-5">
+        <div class="box-1 mx-auto rounded-4 mb-5">
+            <h4 id="heading" class="fw-bold fs-3 accordion text-center" style="color: #D7BDE2 ;"></h4>
+            <br>
+            <div class="border-bottom"></div>
+            <h2 id="arr1" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="arr2" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="concat" class=" fs-4 mt-4 text-center mt-5"></h2>
+        </div>
+
+        <div class="box-1 mx-auto rounded-4 mb-5">
+            <h4 id="heading2" class="fw-bold fs-3 accordion text-center" style="color: #D7BDE2 ;"></h4>
+            <br>
+            <div class="border-bottom"></div>
+            <h2 id="arr" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="join" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="join2" class=" fs-4  text-center"></h2>
+            <h2 id="join3" class=" fs-4 text-center"></h2>
+        </div>
+
+        <div class="box-1 mx-auto rounded-4 mb-5">
+            <h4 id="heading3" class="fw-bold fs-3 accordion text-center" style="color: #D7BDE2 ;"></h4>
+            <br>
+            <div class="border-bottom"></div>
+            <h2 id="ar1" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="map" class=" fs-4 mt-4 text-center mt-5"></h2>
+        </div>
+
+        <div class="box-1 mx-auto rounded-4 mb-5">
+            <h4 id="heading4" class="fw-bold fs-3 accordion text-center" style="color: #D7BDE2 ;"></h4>
+            <br>
+            <div class="border-bottom"></div>
+            <h2 id="AR1" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="index" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="index2" class=" fs-4 text-center"></h2>
+            <h2 id="index3" class=" fs-4 text-center"></h2>
+        </div>
+
+        <div class="box-1 mx-auto rounded-4 mb-5">
+            <h4 id="heading5" class="fw-bold fs-3 accordion text-center" style="color: #D7BDE2 ;"></h4>
+            <br>
+            <div class="border-bottom"></div>
+            <h2 id="A1" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="include" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="include2" class=" fs-4 text-center"></h2>
+            <h2 id="include3" class=" fs-4 text-center"></h2>
+        </div>
+
+        <div class="box-1 mx-auto rounded-4 mb-5">
+            <h4 id="heading6" class="fw-bold fs-3 accordion text-center" style="color: #D7BDE2 ;"></h4>
+            <br>
+            <div class="border-bottom"></div>
+            <h2 id="arr5" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="pusharray" class=" fs-4 mt-4 text-center mt-5"></h2>
+        </div>
+
+        <div class="box-1 mx-auto rounded-4 mb-5">
+            <h4 id="heading7" class="fw-bold fs-3 accordion text-center" style="color: #D7BDE2 ;"></h4>
+            <br>
+            <div class="border-bottom"></div>
+            <h2 id="arr6" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="poparray" class=" fs-4 mt-4 text-center mt-5"></h2>
+        </div>
+
+        <div class="box-1 mx-auto rounded-4 mb-5">
+            <h4 id="heading8" class="fw-bold fs-3 accordion text-center" style="color: #D7BDE2 ;"></h4>
+            <br>
+            <div class="border-bottom"></div>
+            <h2 id="arr7" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="shiftarray" class=" fs-4 mt-4 text-center mt-5"></h2>
+        </div>
+
+        <div class="box-1 mx-auto rounded-4 mb-5">
+            <h4 id="heading9" class="fw-bold fs-3 accordion text-center" style="color: #D7BDE2 ;"></h4>
+            <br>
+            <div class="border-bottom"></div>
+            <h2 id="arr8" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="unshiftarray" class=" fs-4 mt-4 text-center mt-5"></h2>
+        </div>
+
+        <div class="box-1 mx-auto rounded-4 mb-5">
+            <h4 id="heading10" class="fw-bold fs-3 accordion text-center" style="color: #D7BDE2 ;"></h4>
+            <br>
+            <div class="border-bottom"></div>
+            <h2 id="arr9" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="slicearray" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="slicearray2" class=" fs-4 text-center"></h2>
+        </div>
+
+        <div class="box-1 mx-auto rounded-4 mb-5">
+            <h4 id="heading11" class="fw-bold fs-3 accordion text-center" style="color: #D7BDE2 ;"></h4>
+            <br>
+            <div class="border-bottom"></div>
+            <h2 id="arr10" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="splicearray" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="splicearray2" class=" fs-4 text-center"></h2>
+        </div>
+
+        <div class="box-1 mx-auto rounded-4 mb-5">
+            <h4 id="heading12" class="fw-bold fs-3 accordion text-center" style="color: #D7BDE2 ;"></h4>
+            <br>
+            <div class="border-bottom"></div>
+            <h2 id="arr11" class=" fs-4 mt-4 text-center"></h2>
+            <h2 id="reversearray" class=" fs-4 mt-4 text-center"></h2>
+        </div>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
